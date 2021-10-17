@@ -1,0 +1,33 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.whoami::after {
+  content: '';
+  border-right: 2px solid;
+  animation: blinkTextCursor 500ms infinite;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255 0.8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
